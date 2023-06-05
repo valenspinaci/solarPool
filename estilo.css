@@ -27,8 +27,11 @@ body{
     height: 100%;
     width: 100%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sombras{
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #00000027;
 }
