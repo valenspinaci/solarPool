@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos y Servicios</title>
+
+    <!--Links-->
     <link rel="stylesheet" href="estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,9 +140,13 @@
         </div>
         
         
-        <div class="mb-5 mt-3 d-flex flex-column align-items-center justify-content-center">
-            <input type="email" class="form-control w-50 my-3" id="exampleFormControlInput1" placeholder="Ingresá los m2 de tu piscina ">
-            <a class="btn btn-warning w-25 " href="">Calcular</a>
+        <div class="w-100 mb-5 mt-3 d-flex flex-column align-items-center justify-content-center">
+            <form id="presupuesto" class="w-25 d-flex flex-column justify-content-center align-items-center" method="get">
+                <input type="number" class="form-control w-100 my-3" id="inputMetros" placeholder="Ingresá los m2 de tu piscina ">
+                <button id="calcular" type="button" class="btn btn-warning w-75">Calcular</button>
+            </form>
+        </div>
+        <div id="resultado-formulario">
         </div>
     
     </main>
@@ -166,6 +172,8 @@
         </div>
     </footer>
 
+    <!--Scripts-->
+    <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/003e8723d4.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
