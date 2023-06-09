@@ -14,7 +14,7 @@ if (presupuesto) {
         const metrosNecesarios = metros * 0.7;
         //Por lo tanto el valor estimado es igual a los metros necesarios por el valor del m2 de panel
         const valor = metrosNecesarios * valorPanel;
-        resultado.innerHTML = '<div class="fondo-amarillo p-2 mb-3 d-flex justify-content-center align-items-center"><h2 class="fs-4 fw-bold text-center">El valor estimado es de $' + valor + '</h2></div>';
+        resultado.innerHTML = '<div class="bg-warning p-2 mb-3 d-flex justify-content-center align-items-center"><h2 class="fs-4 fw-bold text-center">El valor estimado es de $' + valor + '</h2></div>';
         inputMetros.value=" "
     });
 }
