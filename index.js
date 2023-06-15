@@ -29,16 +29,22 @@ const inputComentario = document.getElementById("comentario");
 
 contacto.addEventListener("submit", (e)=>{
     e.preventDefault();
+    var patron = /^[a-zA-Z]+$/; // Expresión regular para permitir solo letras
+
     if(inputNombre.value==""){
         alert("Debes ingresar un nombre")
     }else if(!isNaN(inputNombre.value)){
         alert("El nombre no puede ser un número")
+    } else if (!patron.test(inputNombre.value)){
+        alert("El nombre solo debe contener letras");
     }
 
     if(inputApellido.value==""){
         alert("Debes ingresar un apellido")
     }else if(!isNaN(inputNombre.value)){
         alert("El apellido no puede ser un número")
+    } else if (!patron.test(inputNombre.value)){
+        alert("El apellido solo debe contener letras");
     }
 
     if(inputEmail.value==""){
